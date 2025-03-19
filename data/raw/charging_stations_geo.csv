@@ -1,0 +1,36 @@
+station_id,region,latitude,longitude,charger_type,power_level,installation_date,operator,available_ports,avg_daily_usage
+CS001,California,37.7749,-122.4194,DC Fast Charger,150,2020-01-15,ChargePoint,4,15.3
+CS002,California,34.0522,-118.2437,DC Fast Charger,150,2020-02-28,EVgo,6,18.7
+CS003,California,32.7157,-117.1611,Level 2,22,2019-11-12,Blink,8,12.4
+CS004,California,38.5816,-121.4944,DC Fast Charger,350,2021-03-17,Electrify America,10,21.6
+CS005,California,36.7783,-119.4179,Level 2,19,2018-09-23,ChargePoint,4,9.8
+CS006,New York,40.7128,-74.0060,DC Fast Charger,150,2020-05-11,EVgo,4,16.2
+CS007,New York,42.6526,-73.7562,Level 2,22,2019-07-18,ChargePoint,6,11.5
+CS008,New York,43.0481,-76.1474,DC Fast Charger,100,2021-01-29,Electrify America,4,14.3
+CS009,New York,40.7282,-73.7949,Level 2,19,2018-12-05,Blink,8,10.7
+CS010,New York,42.8864,-78.8784,DC Fast Charger,150,2021-06-13,EVgo,6,15.8
+CS011,Texas,29.7604,-95.3698,DC Fast Charger,150,2020-08-21,Electrify America,6,14.1
+CS012,Texas,32.7767,-96.7970,Level 2,22,2019-04-15,ChargePoint,4,8.9
+CS013,Texas,30.2672,-97.7431,DC Fast Charger,100,2021-02-07,EVgo,4,13.5
+CS014,Texas,29.4241,-98.4936,Level 2,19,2018-10-30,Blink,6,7.6
+CS015,Texas,31.7619,-106.4850,DC Fast Charger,150,2021-05-25,ChargePoint,8,12.9
+CS016,Florida,25.7617,-80.1918,DC Fast Charger,150,2020-09-09,EVgo,6,15.2
+CS017,Florida,27.9506,-82.4572,Level 2,22,2019-06-22,ChargePoint,4,10.3
+CS018,Florida,30.3322,-81.6557,DC Fast Charger,100,2021-04-19,Electrify America,4,12.8
+CS019,Florida,28.5383,-81.3792,Level 2,19,2018-11-14,Blink,8,9.1
+CS020,Florida,26.1224,-80.1373,DC Fast Charger,150,2021-03-31,EVgo,6,14.7
+CS021,Washington,47.6062,-122.3321,DC Fast Charger,150,2020-07-14,ChargePoint,4,14.5
+CS022,Washington,47.2529,-122.4443,Level 2,22,2019-08-09,Blink,6,9.8
+CS023,Washington,47.6588,-117.4260,DC Fast Charger,100,2021-01-05,Electrify America,4,12.1
+CS024,Washington,48.7519,-122.4787,Level 2,19,2018-10-17,EVgo,8,8.3
+CS025,Washington,47.0379,-122.9007,DC Fast Charger,150,2021-02-12,ChargePoint,6,13.9
+CS026,Massachusetts,42.3601,-71.0589,DC Fast Charger,150,2020-06-27,EVgo,6,15.7
+CS027,Massachusetts,42.1015,-72.5898,Level 2,22,2019-09-14,ChargePoint,4,10.9
+CS028,Massachusetts,41.9654,-71.1787,DC Fast Charger,100,2021-01-18,Electrify America,4,13.2
+CS029,Massachusetts,42.3751,-71.1056,Level 2,19,2018-12-21,Blink,8,9.5
+CS030,Massachusetts,42.2626,-71.8023,DC Fast Charger,150,2021-04-03,EVgo,6,14.8
+CS031,Colorado,39.7392,-104.9903,DC Fast Charger,150,2020-03-08,ChargePoint,4,13.9
+CS032,Colorado,38.8339,-104.8214,Level 2,22,2019-05-19,Blink,6,9.2
+CS033,Colorado,40.0150,-105.2705,DC Fast Charger,100,2021-02-21,Electrify America,4,12.7
+CS034,Colorado,39.9639,-105.0814,Level 2,19,2018-11-05,EVgo,8,8.6
+CS035,Colorado,38.2544,-104.6091,DC Fast Charger,150,2021-04-15,ChargePoint,6,13.1 
