@@ -46,7 +46,7 @@ class Visualizer:
         self.color_palette = sns.color_palette(self.colors)
         
         # Modern plot style
-        plt.style.use('seaborn-whitegrid')
+        plt.style.use('seaborn-v0_8-whitegrid')
         
         logger.debug(f"Visualizer initialized with output directory: {self.output_dir}")
     

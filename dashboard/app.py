@@ -8,9 +8,47 @@ import sys
 import pandas as pd
 import numpy as np
 import streamlit as st
+
+# Set page config - MUST BE THE FIRST STREAMLIT COMMAND
+st.set_page_config(
+    page_title="EV Adoption Analysis Dashboard",
+    page_icon="🚗",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 import matplotlib.pyplot as plt
 import folium
-from streamlit_folium import folium_static
+
+# Debug information
+st.write("Python Path:")
+for path in sys.path:
+    st.write(f"- {path}")
+
+# Try to import streamlit_folium with error handling
+try:
+    from streamlit_folium import folium_static
+    st.success("Successfully imported streamlit_folium!")
+except ImportError as e:
+    st.error(f"Error importing streamlit_folium: {e}")
+    st.info("Attempting to install streamlit_folium...")
+    import subprocess
+    result = subprocess.run(["pip", "install", "streamlit-folium"], capture_output=True, text=True)
+    st.code(result.stdout)
+    st.code(result.stderr)
+    st.info("Trying import again...")
+    try:
+        from streamlit_folium import folium_static
+        st.success("Successfully imported streamlit_folium after installation!")
+    except ImportError as e2:
+        st.error(f"Still couldn't import streamlit_folium: {e2}")
+        st.warning("Continuing without streamlit_folium functionality...")
+        # Define a placeholder function to avoid errors
+        def folium_static(folium_map):
+            st.warning("Map display not available - streamlit_folium package missing")
+            st.write("Please install with: pip install streamlit-folium")
+            return None
+
 import joblib
 
 # Add the project root to the path
@@ -18,14 +56,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Import project modules
 from src.models.adoption_predictor import AdoptionPredictor
-
-# Set page config
-st.set_page_config(
-    page_title="EV Adoption Analysis Dashboard",
-    page_icon="🚗",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 # Define functions for the dashboard
 def load_data():
